@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% block title %}
+            <title>CvHelper</title>
+        {% endblock title %}
+        {% block styles %}
+            {% load static %}
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <link rel="stylesheet" href="{% static 'writer/css/style.css' %}">
+            <link rel="stylesheet" href="{% static 'writer/css/base.css' %}">
+        {% endblock styles %}
+    {% endblock head %}
+</head>
+<body>
+    {% block header %}
+    <div class="row">
+            <nav class="white stroke z-depth-0">
+                <div class="container">
+                    <div class="nav-wrapper white">
+                        <a href="#" class="brand-logo green-text">Logo</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#" class="black-text">HOW IT WORKS</a></li>
+                            <li><a href="#" class="black-text">LATEST REQUEST</a></li>
+                            <li><a href="#" class="black-text">ABOUT US</a></li>
+                            <li><button class="btn">MY ACCOUNT</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    {% endblock header %}
+    {% block content %}
+    {% endblock content %}
+    {% block scripts %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {% endblock scripts %}
+</body>
+</html>

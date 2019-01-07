@@ -1,0 +1,14 @@
+.attention {
+    padding: 100px 0 100px 0 !important;
+}
+.attention p {
+    font-size: 120%;
+}
+.welcome-text {
+    padding: 50px;
+}
+
+.card {
+    border: solid 0.05em;
+    padding: 20px;
+}
